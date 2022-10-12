@@ -11,37 +11,84 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Header = styled.header`
-  background-color: #000203;
+  background-color: #001e40;
   color: white;
   padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
 `;
+
+// cor 1: #001e40
+// cor 2: #000203
 
 export const Title = styled.h1`
   color: white;
-  background-color: #2c00ff;
+  background-color: #01254f;
   border: 4px solid darkblue;
   border-radius: 15px;
   width: fit-content;
   padding: 5px;
+  font-size: 1.5rem;
+  @media SCREEN and (max-width: 800px){
+    display: none;
+  }
+`;
 
-  @media SCREEN and (max-width: 1000px) {
-    font-size: 1.5rem;
+export const TitleTwo = styled.h1`
+  color: white;
+  background-color: #01254f;
+  border: 4px solid darkblue;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 5px;
+  font-size: 1.5rem;
+  display: none;
+  transition: 0.3s;
+  @media SCREEN and (max-width: 800px){
+    display: initial;
+  }
+  @media SCREEN and (max-width: 500px){
+    font-size: 1rem;
   }
 `;
 
 export const BtnLink = styled.a`
   color: white;
-  background-color: #2c00ff;
+  background-color: #01254f;
   border: 4px solid darkblue;
   border-radius: 15px;
   width: fit-content;
   padding: 5px;
+  font-size: 1.3rem;
   transition: 0.2s;
   &:hover {
     background-color: darkblue;
+  }
+  @media SCREEN and (max-width: 800px){
+    display: none;
+  }
+`;
+
+export const BtnLinkTwo = styled.a`
+  display: none;
+  color: white;
+  background-color: #01254f;
+  border: 4px solid darkblue;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 5px;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  &:hover {
+    background-color: darkblue;
+  }
+  @media SCREEN and (max-width: 800px){
+    display: initial;
+  }
+  @media SCREEN and (max-width: 500px){
+    font-size: 1rem;
   }
 `;
 
@@ -55,19 +102,21 @@ export const Main = styled.main`
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  padding-top: 25px;
   @media screen and (max-width: 957px){
-    padding: 0;
+    padding: 15px 0 0 0;
   }
 `;
 
 export const Subtitle = styled.h1`
   color: white;
   text-align: center;
-  background-color: #2c00ff;
-  border: 4px solid white;
+  background-color: #01254f;
+  border: 4px solid darkblue;
   border-radius: 15px;
   width: fit-content;
   padding: 5px;
+  font-size: 1.6rem;
 `;
 
 export const Section = styled.section`
@@ -75,7 +124,7 @@ export const Section = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5% 10% 5% 10%;
+  padding: 5%;
   @media SCREEN and (max-width: 957px) {
     display: block;
     text-align: center;
@@ -93,11 +142,13 @@ export const Img = styled.img`
 
   @media SCREEN and (max-width: 1220px) {
     width: 250px;
+    margin-bottom: 10px;
   }
 `;
 
 export const Ul = styled.ul`
   text-align: start;
+  width: 40%;
   @media SCREEN and (max-width: 957px) {
     display: flex;
     flex-direction: column;
@@ -110,11 +161,11 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
   color: white;
-  background-color: #2c00ff;
+  background-color: #01254f;
   border: 4px solid darkblue;
   border-radius: 15px;
   list-style: none;
-  padding: 1% 2% 1% 2%;
+  padding: 10px;
   margin: 5px;
   font-size: 1.3rem;
   text-align: start;
@@ -124,6 +175,17 @@ export const Li = styled.li`
   }
   @media SCREEN and (max-width: 957px) {
     width: 500px;
+  }
+  @media SCREEN and (max-width: 800px){
+    width: 95%;
+    font-size: 1rem;
+  }
+`;
+
+export const LiP = styled.p`
+  @media SCREEN and (max-width: 800px){
+    margin: 5px;
+    font-size: 1rem;
   }
 `;
 
