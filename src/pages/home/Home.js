@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import * as S from "./style/style";
 import { GlobalStyle } from "./style/style";
 import Eu from "./images/Eu.png";
