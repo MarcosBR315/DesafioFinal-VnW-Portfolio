@@ -5,6 +5,7 @@ import { GlobalStyle } from "./style/style";
 import Eu from "./images/Eu.png";
 import whiteInstagram from './images/whiteInstagram.png';
 import whiteLinkedin from './images/whiteLinkedin.png';
+import iconegithub from "./images/iconegithub.png";
 
 export default function Home() {
 
@@ -56,6 +57,7 @@ export default function Home() {
           <S.UlTwo>
             <S.LiTwo><a href="https://www.instagram.com/marcospontes05/?next=%2F" rel="noreferrer" target="_blank" ><S.IconImg src={whiteInstagram} alt="Instagram" /></a></S.LiTwo>
             <S.LiTwo><a href="https://www.linkedin.com/in/marcos-paulo-o-pontes-355059214/" rel="noreferrer" target="_blank"><S.IconImg src={whiteLinkedin} alt="LinkedIn" /></a></S.LiTwo>
+            <S.LiTwo><a href="https://github.com/MarcosBR315" rel="noreferrer" target="_blank"><S.IconImgGit src={iconegithub} alt="GitHub" /></a></S.LiTwo>
           </S.UlTwo>
         </nav>
       </S.Footer>

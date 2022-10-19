@@ -205,6 +205,18 @@ export const IconImg = styled.img`
   }
 `;
 
+export const IconImgGit = styled.img`
+  width: 40px;
+  padding: 7px;
+  transition: 0.2s;
+  &:hover {
+    border: 2px solid white;
+    margin: 1px;
+    margin-top: 0;
+    padding: 7.2px;
+  }
+`;
+
 export const UlTwo = styled.ul`
   display: flex;
   list-style: none;
