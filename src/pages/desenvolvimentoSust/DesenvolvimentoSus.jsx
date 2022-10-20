@@ -7,7 +7,14 @@ import Modal from "react-modal";
 import whiteInstagram from './images/whiteInstagram.png';
 import whiteLinkedin from './images/whiteLinkedin.png';
 import iconegithub from './images/iconegithub.png';
+import postosaude from './images/postosaude.png';
+import escola from './images/escola.png';
+import pracapublica from './images/pracapublica.png';
+import postogasolina from './images/postogasolina.png';
+import shopping from './images/shopping.png';
 
+
+//Início
 export default function DesenvolvimentoSus() {
 
     //Trocar nome
@@ -19,30 +26,59 @@ export default function DesenvolvimentoSus() {
     //Modal
 
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [modalIsOpen2, setIsOpen2] = useState(false);
+    const [modalIsOpen3, setIsOpen3] = useState(false);
+    const [modalIsOpen4, setIsOpen4] = useState(false);
+    const [modalIsOpen5, setIsOpen5] = useState(false);
 
     const customStyles = {
         content: {
-          top: '50%',
-          left: '50%',
-          right: 'auto',
-          bottom: 'auto',
-          marginRight: '-50%',
-          transform: 'translate(-50%, -50%)',
-          background: 'transparent'
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'white',
+            border: '2px solid darkblue',
+            borderRadius: '15px',
+            opacity: '10',
+            width: '85%'
         },
-      };
+    };
 
     function closeModal() {
         setIsOpen(false);
+        setIsOpen2(false);
+        setIsOpen3(false);
+        setIsOpen4(false);
+        setIsOpen5(false);
     };
 
     function openModal() {
         setIsOpen(true);
+    };
+
+    function openModal2() {
+        setIsOpen2(true);
     }
 
+    function openModal3() {
+        setIsOpen3(true);
+    }
+
+    function openModal4() {
+        setIsOpen4(true);
+    }
+
+    function openModal5() {
+        setIsOpen5(true);
+    }
+
+
     function afterOpenModal() {
-        
-      }
+
+    }
 
     //Fim Modal
 
@@ -52,21 +88,25 @@ export default function DesenvolvimentoSus() {
             <S.GlobalStyle />
             <S.Header>
                 <Link to="/">
-                    <S.BtnLink>Página principal</S.BtnLink>
+                    <S.BtnLink>Página Inicial</S.BtnLink>
+                    <S.BtnLinkTwo>Pg. Inicial</S.BtnLinkTwo>
                 </Link>
             </S.Header>
             <S.Main>
                 <S.Titulos>
-                    <h1>Meus objetivos de Desenvolvimento Sustentável</h1>
-                    <h2>Riacho Fundo II (DF)</h2>
+                    <S.TitleOne>Meus objetivos de Desenvolvimento Sustentável</S.TitleOne>
+                    <S.TitleTwo>Objetivos de D. Sustentável</S.TitleTwo>
+                    <S.SubtitleOne>Riacho Fundo II (DF)</S.SubtitleOne>
+                    <S.SubtitleTwo><p>Riacho Fundo II</p></S.SubtitleTwo>
+                    <S.SubtitleTwo>(DF)</S.SubtitleTwo>
                 </S.Titulos>
                 <S.Consideracoes>
                     <S.H3>Por que escolhi estes 5 temas?</S.H3>
                     <S.Ol>
-                        <li>Moro na cidade há 5 anos</li>
-                        <li>Foram construídas muitas casas e poucos locais públicos (hospitais, escolas, etc.).</li>
-                        <li>Em muitos casos você precisa sair da cidade para ter acesso ao colégio.</li>
-                        <li>Hospitais, bancos, postos de gasolina dentre muitos outros não existem aqui.</li>
+                        <S.Li>Moro na cidade há 5 anos</S.Li>
+                        <S.Li>Foram construídas muitas casas e poucos locais públicos (hospitais, escolas, etc.).</S.Li>
+                        <S.Li>Em muitos casos você precisa sair da cidade para ter acesso ao colégio.</S.Li>
+                        <S.Li>Hospitais, bancos, postos de gasolina dentre muitos outros não existem aqui.</S.Li>
                     </S.Ol>
                 </S.Consideracoes>
                 <S.Linha />
@@ -83,67 +123,81 @@ export default function DesenvolvimentoSus() {
                             contentLabel="1 - Saúde"
                         >
                             <S.Mais onClick={closeModal}>Fechar</S.Mais>
-
+                            <S.SectionModal>
+                                <S.ImgModal src={postosaude} alt="Posto de Saúde" />
+                                <S.DivModal>
+                                    <h2>O que fazer?</h2>
+                                    <p>rfrfrfrfrfrfrfrfrfrfrfrfrfrfrfrfrfrfrfdgdfgeddvservsgbghvstvhtrvh</p>
+                                </S.DivModal>
+                            </S.SectionModal>
                         </Modal>
                     </S.Caixa>
                     <S.Caixa>
                         <p>2 - Educação</p>
                         <S.PlanImg>✏️</S.PlanImg>
-                        <S.Mais onClick={() => openModal()}>Saiba mais</S.Mais>
+                        <S.Mais onClick={() => openModal2()}>Saiba mais</S.Mais>
                         <Modal
-                            isOpen={modalIsOpen}
+                            isOpen={modalIsOpen2}
                             onAfterOpen={afterOpenModal}
                             onRequestClose={closeModal}
                             style={customStyles}
                             contentLabel="2 - Educação"
                         >
                             <S.Mais onClick={closeModal}>Fechar</S.Mais>
-
+                            <S.SectionModal>
+                                <S.ImgModal src={escola} alt="Escola" />
+                            </S.SectionModal>
                         </Modal>
                     </S.Caixa>
                     <S.Caixa>
                         <p>3 - Construção de praças públicas</p>
                         <S.PlanImg>⛲</S.PlanImg>
-                        <S.Mais onClick={() => openModal()}>Saiba mais</S.Mais>
+                        <S.Mais onClick={() => openModal3()}>Saiba mais</S.Mais>   
                         <Modal
-                            isOpen={modalIsOpen}
+                            isOpen={modalIsOpen3}
                             onAfterOpen={afterOpenModal}
                             onRequestClose={closeModal}
                             style={customStyles}
-                            contentLabel="3 - Praças"
+                            contentLabel="3 - Locais Públicos"
                         >
                             <S.Mais onClick={closeModal}>Fechar</S.Mais>
-
+                            <S.SectionModal>
+                                <S.ImgModal src={pracapublica} alt="Praça Pública" />
+                            </S.SectionModal>
                         </Modal>
                     </S.Caixa>
                     <S.Caixa>
                         <p>4 - Construção de postos de gasolina</p>
                         <S.PlanImg>⛽</S.PlanImg>
-                        <S.Mais onClick={() => openModal()}>Saiba mais</S.Mais>
+                        <S.Mais onClick={() => openModal4()}>Saiba mais</S.Mais>
                         <Modal
-                            isOpen={modalIsOpen}
+                            isOpen={modalIsOpen4}
                             onAfterOpen={afterOpenModal}
                             onRequestClose={closeModal}
                             style={customStyles}
-                            contentLabel="4 - Gasolina"
+                            contentLabel="4 - Postos de Gasolina"
                         >
                             <S.Mais onClick={closeModal}>Fechar</S.Mais>
-
+                            <S.SectionModal>
+                                <S.ImgModal src={postogasolina} alt="Posto de Gasolina Ipiranga" />
+                            </S.SectionModal>
                         </Modal>
                     </S.Caixa>
                     <S.Caixa>
                         <p>5 - Entretenimento</p>
                         <S.PlanImg>🎭</S.PlanImg>
-                        <S.Mais onClick={() => openModal()}>Saiba mais</S.Mais>
+                        <S.Mais onClick={() => openModal5()}>Saiba mais</S.Mais>
                         <Modal
-                            isOpen={modalIsOpen}
+                            isOpen={modalIsOpen5}
                             onAfterOpen={afterOpenModal}
                             onRequestClose={closeModal}
                             style={customStyles}
                             contentLabel="5 - Entretenimento"
                         >
                             <S.Mais onClick={closeModal}>Fechar</S.Mais>
-
+                            <S.SectionModal>
+                                <S.ImgModal src={shopping} alt="Shopping Center" />
+                            </S.SectionModal>
                         </Modal>
                     </S.Caixa>
                 </S.Objetivos>

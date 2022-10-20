@@ -37,9 +37,31 @@ export const BtnLink = styled.p`
   }
 `;
 
+export const BtnLinkTwo = styled.a`
+  display: none;
+  color: white;
+  background-color: #01254f;
+  border: 4px solid darkblue;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 5px;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  &:hover {
+    background-color: darkblue;
+  }
+  @media SCREEN and (max-width: 800px){
+    display: initial;
+  }
+  @media SCREEN and (max-width: 500px){
+    font-size: 1rem;
+  }
+`;
+
 export const Main = styled.main`
   width: 100%;
   padding: 25px 15px 50px 15px;
+  background-color: #c8e8e7;
 `;
 
 export const Titulos = styled.div`
@@ -55,6 +77,32 @@ export const Titulos = styled.div`
   border-radius: 15px;
 `;
 
+export const TitleOne = styled.h1`
+  @media screen and (max-width: 702px) {
+    display: none;
+  }
+`;
+
+export const TitleTwo = styled.h1`
+  display: none;
+  @media screen and (max-width: 702px) {
+    display: initial;
+  }
+`;
+
+export const SubtitleOne = styled.h2`
+  @media screen and (max-width: 702px) {
+    display: none;
+  }
+`;
+
+export const SubtitleTwo = styled.h2`
+  display: none;
+  @media screen and (max-width: 702px) {
+    display: initial;
+  }
+`;
+
 export const Consideracoes = styled.div`
   margin-top: 85px;
   margin-bottom: 85px;
@@ -62,12 +110,20 @@ export const Consideracoes = styled.div`
 
 export const Ol = styled.ol`
   display: block;
-  list-style-type: decimal;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 40px;
+  width: fit-content;
+`;
+
+export const Li = styled.li`
+  padding: 10px;
+  border: 2px solid darkblue;
+  background-color: white;
+  border-radius: 15px;
+  margin: 5px;
 `;
 
 export const H3 = styled.h3`
@@ -129,6 +185,28 @@ export const Mais = styled.button`
   &:hover {
     background-color: darkblue;
     cursor: pointer;
+  }
+`;
+
+export const SectionModal = styled.section`
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+`;
+
+export const ImgModal = styled.img`
+  width: 450px;
+  @media SCREEN and (max-width: 616px){
+    width: 300px;
+  }
+`;
+
+export const DivModal = styled.div`
+  padding: 20px;
+  width: fit-content;
+  @media SCREEN and (max-width: 518px) {
+    padding: 5px;
+    font-size: 0.7rem;
   }
 `;
 

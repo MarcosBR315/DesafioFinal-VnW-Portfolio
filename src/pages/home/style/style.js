@@ -22,6 +22,7 @@ export const Header = styled.header`
 
 // cor 1: #001e40
 // cor 2: #000203
+//cor 3: #06267a
 
 export const Title = styled.h1`
   color: white;
@@ -177,8 +178,9 @@ export const Li = styled.li`
     width: 500px;
   }
   @media SCREEN and (max-width: 800px){
-    width: 95%;
+    width: fit-content;
     font-size: 1rem;
+    background-color: #06267a;
   }
 `;
 
