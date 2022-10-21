@@ -20,8 +20,8 @@ export const Header = styled.header`
 `;
 
 export const BtnLink = styled.p`
-  color: white;
-  background-color: #01254f;
+  color: black;
+  background-color: lightblue;
   border: 4px solid darkblue;
   border-radius: 15px;
   width: fit-content;
@@ -39,8 +39,8 @@ export const BtnLink = styled.p`
 
 export const BtnLinkTwo = styled.a`
   display: none;
-  color: white;
-  background-color: #01254f;
+  color: black;
+  background-color: lightblue;
   border: 4px solid darkblue;
   border-radius: 15px;
   width: fit-content;
@@ -152,6 +152,10 @@ export const Objetivos = styled.section`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  @media SCREEN and (max-width: 930px){
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Caixa = styled.div`
@@ -163,6 +167,22 @@ export const Caixa = styled.div`
   height: fit-content;
   color: white;
   padding: 15px;
+  @media SCREEN and (max-width: 1231px){
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media SCREEN and (max-width: 930px){
+    width: 300px;
+    height: 300px;
+  }
+  @media SCREEN and (max-width: 450px){
+    margin: 0;
+  }
+  @media SCREEN and (max-width: 340px){
+    width: 200px;
+    height: fit-content;
+  }
 `;
 
 export const PlanImg = styled.p`
@@ -170,9 +190,35 @@ export const PlanImg = styled.p`
  text-align: center;
  font-size: 5rem;
  margin-top: 10px;
+ @media SCREEN and (max-width: 930px){
+    margin-top: 50px;
+  }
 `;
 
 export const Mais = styled.button`
+  color: white;
+  background-color: #01254f;
+  border: 2px solid darkblue;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 5px;
+  transition: 0.2s;
+  margin: 5px 0 10px 0;
+  text-decoration: none;
+  &:hover {
+    background-color: darkblue;
+    cursor: pointer;
+  }
+  @media SCREEN and (max-width: 930px){
+    position: relative;
+    top: 50px;
+  }
+  @media SCREEN and (max-width: 340px){
+    top: 20px;
+  }
+`;
+
+export const MaisModal = styled.button`
   color: white;
   background-color: #01254f;
   border: 2px solid darkblue;
@@ -199,11 +245,28 @@ export const ImgModal = styled.img`
   @media SCREEN and (max-width: 616px){
     width: 300px;
   }
+  @media SCREEN and (max-width: 450px){
+    width: 230px;
+  }
 `;
 
 export const DivModal = styled.div`
   padding: 20px;
-  width: fit-content;
+  width: 450px;
+  @media SCREEN and (max-width: 616px){
+    width: 300px;
+  }
+  @media SCREEN and (max-width: 518px) {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
+  @media SCREEN and (max-width: 450px){
+    width: 230px;
+  }
+`;
+
+export const PModal = styled.p`
+  padding-top: 10px;
   @media SCREEN and (max-width: 518px) {
     padding: 5px;
     font-size: 0.7rem;

@@ -122,12 +122,18 @@ export default function DesenvolvimentoSus() {
                             style={customStyles}
                             contentLabel="1 - Saúde"
                         >
-                            <S.Mais onClick={closeModal}>Fechar</S.Mais>
+                            <S.MaisModal onClick={closeModal}>Fechar</S.MaisModal>
                             <S.SectionModal>
                                 <S.ImgModal src={postosaude} alt="Posto de Saúde" />
                                 <S.DivModal>
                                     <h2>O que fazer?</h2>
-                                    <p>rfrfrfrfrfrfrfrfrfrfrfrfrfrfrfrfrfrfrfdgdfgeddvservsgbghvstvhtrvh</p>
+                                    <S.PModal>
+                                        As Unidades Básicas de Saúde, também conhecidas como UPAs e postos de saúde,
+                                        são escassos no Riacho Fundo II, há entre uma
+                                        ou duas delas em distâncias muito grandes. Faltam muitos recursos como vacinas
+                                        e remédios. Para resolver esta situação, podem ser realizadas várias ações
+                                        por meio da população como abaixo-assinados.
+                                    </S.PModal>
                                 </S.DivModal>
                             </S.SectionModal>
                         </Modal>
@@ -143,9 +149,19 @@ export default function DesenvolvimentoSus() {
                             style={customStyles}
                             contentLabel="2 - Educação"
                         >
-                            <S.Mais onClick={closeModal}>Fechar</S.Mais>
+                            <S.MaisModal onClick={closeModal}>Fechar</S.MaisModal>
                             <S.SectionModal>
                                 <S.ImgModal src={escola} alt="Escola" />
+                                <S.DivModal>
+                                    <h2>O que fazer?</h2>
+                                    <S.PModal>
+                                        Escolas de todos os níveis (ensino básico, médio e superior) estão em falta
+                                        no Riacho Fundo II, muitos moradores matriculam-se em escolas e universidades
+                                        em cidades vizinhas para receberem o acesso ao estudo. Muito se pode fazer
+                                        para resolver esta situação, um trabalho bem feito do governo pode resolver
+                                        este problema recorrente em pouco tempo se bem planejado. 
+                                    </S.PModal>
+                                </S.DivModal>
                             </S.SectionModal>
                         </Modal>
                     </S.Caixa>
@@ -160,9 +176,19 @@ export default function DesenvolvimentoSus() {
                             style={customStyles}
                             contentLabel="3 - Locais Públicos"
                         >
-                            <S.Mais onClick={closeModal}>Fechar</S.Mais>
+                            <S.MaisModal onClick={closeModal}>Fechar</S.MaisModal>
                             <S.SectionModal>
                                 <S.ImgModal src={pracapublica} alt="Praça Pública" />
+                                <S.DivModal>
+                                    <h2>O que fazer?</h2>
+                                    <S.PModal>
+                                        Um problema recorrente de todo o Riacho Fundo II é onde muitos espaços
+                                        públicos estão vazios, sem nenhuma plantação somente mato. Algo que
+                                        ajudaria bastante no entrosamento social seriam as praças públicas
+                                        com bancos e equipamentos para exercícios físicos. Para isso, o governo
+                                        deveria analisar estes espaços disponíveis para construir praças novas.
+                                    </S.PModal>
+                                </S.DivModal>
                             </S.SectionModal>
                         </Modal>
                     </S.Caixa>
@@ -177,9 +203,20 @@ export default function DesenvolvimentoSus() {
                             style={customStyles}
                             contentLabel="4 - Postos de Gasolina"
                         >
-                            <S.Mais onClick={closeModal}>Fechar</S.Mais>
+                            <S.MaisModal onClick={closeModal}>Fechar</S.MaisModal>
                             <S.SectionModal>
                                 <S.ImgModal src={postogasolina} alt="Posto de Gasolina Ipiranga" />
+                                <S.DivModal>
+                                    <h2>O que fazer?</h2>
+                                    <S.PModal>
+                                        Para abastecer um carro, o cidadão residente do Riacho Fundo II
+                                        deve sair da cidade para encher o tanque de seu automóvel. Há
+                                        relatos diários de pessoas que acabam ficando sem combustível
+                                        e precisam buscar a pé combustível para seu veículo. Uma boa
+                                        forma de resolver isso seria a facilitação de abertura de postos de
+                                        gasolina para empresas privadas. 
+                                    </S.PModal>
+                                </S.DivModal>
                             </S.SectionModal>
                         </Modal>
                     </S.Caixa>
@@ -194,9 +231,18 @@ export default function DesenvolvimentoSus() {
                             style={customStyles}
                             contentLabel="5 - Entretenimento"
                         >
-                            <S.Mais onClick={closeModal}>Fechar</S.Mais>
+                            <S.MaisModal onClick={closeModal}>Fechar</S.MaisModal>
                             <S.SectionModal>
                                 <S.ImgModal src={shopping} alt="Shopping Center" />
+                                <S.DivModal>
+                                    <h2>O que fazer?</h2>
+                                    <S.PModal>
+                                        O Riacho Fundo II pode ser considerado uma cidade residencial, muitas casas
+                                        com pouco comércio além da falta de serviços essenciais como bancos e shopping
+                                        centers. Para atrair investimentos para a cidade, o governo deveria facilitar
+                                        a compra de grandes espaços para construção de espaços para entretenimento.
+                                    </S.PModal>
+                                </S.DivModal>
                             </S.SectionModal>
                         </Modal>
                     </S.Caixa>

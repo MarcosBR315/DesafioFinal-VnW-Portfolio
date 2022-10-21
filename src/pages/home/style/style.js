@@ -22,7 +22,8 @@ export const Header = styled.header`
 
 // cor 1: #001e40
 // cor 2: #000203
-//cor 3: #06267a
+// cor 3: #06267a
+// cor: #01254f
 
 export const Title = styled.h1`
   color: white;
@@ -56,8 +57,8 @@ export const TitleTwo = styled.h1`
 `;
 
 export const BtnLink = styled.a`
-  color: white;
-  background-color: #01254f;
+  color: black;
+  background-color: lightblue;
   border: 4px solid darkblue;
   border-radius: 15px;
   width: fit-content;
@@ -66,6 +67,7 @@ export const BtnLink = styled.a`
   transition: 0.2s;
   &:hover {
     background-color: darkblue;
+    color: white;
   }
   @media SCREEN and (max-width: 800px){
     display: none;
@@ -74,8 +76,8 @@ export const BtnLink = styled.a`
 
 export const BtnLinkTwo = styled.a`
   display: none;
-  color: white;
-  background-color: #01254f;
+  color: black;
+  background-color: lightblue;
   border: 4px solid darkblue;
   border-radius: 15px;
   width: fit-content;
@@ -84,6 +86,7 @@ export const BtnLinkTwo = styled.a`
   transition: 0.2s;
   &:hover {
     background-color: darkblue;
+    color: white;
   }
   @media SCREEN and (max-width: 800px){
     display: initial;
